@@ -1,0 +1,92 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-image: url("./4273996.jpg");
+  background-size: cover;
+  
+}
+
+#cracha {
+
+  width: 350px;
+  border: 1px solid #293351;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #1d253e;
+  padding: 5px;
+  -webkit-box-shadow: 5px 5px 40px 0px rgba(55, 98, 133, 1);
+  -moz-box-shadow: 5px 5px 40px 0px rgba(55, 98, 133, 1);
+  box-shadow: 5px 5px 40px 0px rgba(55, 98, 133, 1);
+  text-align: center;
+  position: relative;
+  perspective: 700;
+  height: 450px;
+  margin: 100px auto;
+
+}
+
+.front {
+  position: absolute;
+  top: 0;
+  left: 15%;
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: rotateY(180deg);
+  margin: 75px 0px 0px 0px;
+}
+
+h1 {
+
+  background-color: #3c486d;
+  width: 100%;
+  border-radius: 5px;
+  padding: 4px;
+  color: white;
+  margin-left: 6px;
+}
+
+h3 {
+  background-color: #3c486d;
+  color: white;
+  padding: 3px;
+}
+
+p {
+  margin-bottom: 30px;
+  color: white;
+  margin: -15px 5px 0 5px;
+}
+
+.foto {
+
+  margin-top: 5px;
+  margin-left: 19px;
+}
+
+img {
+  border-radius: 30%;
+  border: 4px solid #6978a5;
+  height: 200px;
+  width: 200px;
+}
+
+#cracha:hover .front {
+  transform: rotateY(-180deg);
+  transition: 0.2s ease;
+  opacity: 0;
+}
+
+#cracha:hover .back {
+  z-index: 1;
+  transition: 1s ease;
+}
+
+#cracha:hover {
+  transform: rotateY(-180deg);
+  transition: 0.5s ease;
+}
